@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Fee Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blockchain Fee Calculator</h1>
+
+        <label for="amount">Amount (in tokens):</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+
+        <label for="blockchain">Choose Blockchain:</label>
+        <select id="blockchain">
+            <option value="Ethereum">Ethereum (ETH)</option>
+            <option value="Binance">Binance Smart Chain (BSC)</option>
+            <option value="Polygon">Polygon (MATIC)</option>
+        </select>
+
+        <button id="calculateButton">Calculate Fee</button>
+
+        <h2>Transaction Fee:</h2>
+        <p id="fee">Fee: <span>0</span> Tokens</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
